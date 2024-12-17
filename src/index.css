@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors;
+  }
+
+  .feature-card {
+    @apply bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-red-500;
+  }
+
+  .btn-primary {
+    @apply bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 transition-colors;
+  }
+
+  .calendar-grid {
+    @apply grid grid-cols-4 md:grid-cols-6 gap-4;
+  }
+
+  .calendar-day {
+    @apply bg-white rounded-lg shadow-md aspect-square cursor-pointer hover:shadow-lg transition-shadow;
+  }
+}
+
+.advent-calendar {
+  background-image: url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+}
